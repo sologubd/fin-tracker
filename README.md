@@ -12,9 +12,16 @@ source .venv/bin/activate
 ```
 
 ## Start application
-### Using `flask` utility
+### Using `uvicorn`
 ```
-flask --app fin_tracker.main:app run --reload
+uvicorn fin_tracker.main:asgi_app \
+    --host 127.0.0.1 \
+    --port 5000 \
+    --reload
+```
+### Using `Makefile` utility
+```
+make start
 ```
 ### With uvicorn
 ```
