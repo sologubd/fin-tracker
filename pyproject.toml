@@ -1,0 +1,16 @@
+[project]
+name = "fin-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask[async]>=3.1.1",
+    "piccolo>=1.26.1",
+    "uvicorn>=0.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.11",
+]
